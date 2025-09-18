@@ -66,5 +66,20 @@
         <td>11:00 - 13:00</td>
       </tr>
     </table>
+
+    <!-- Formulir Kontak -->
+    <h2>Formulir Kontak</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Nama Lengkap:</label>
+      <input type="text" name="fullname" id="name" required /> <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required /> <br /><br />
+
+      <label for="message">Pesan:</label>
+      <textarea name="usermessage" id="message" rows="4" required></textarea> <br /><br />
+
+      <button type="submit">Kirim</button>
+    </form>
   </body>
 </html>
