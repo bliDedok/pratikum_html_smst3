@@ -16,24 +16,26 @@
         text-align: center;
       }
 
-      nav ul {
-        list-style-type: none;
-        padding: 0;
+      .navbar {
+        margin: 14 0;
         text-align: center;
       }
 
-      nav ul li {
-        display: inline;
-        margin-right: 20px;
+      .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
       }
 
-      nav ul li a {
+      .nav-item {
+        display: inline-block;
+        margin: 0 10;
+      }
+
+      .nav-link {
         text-decoration: none;
         color: #3f51b5;
-      }
-
-      a:hover {
-        text-decoration: underline;
       }
 
       section {
@@ -54,11 +56,11 @@
       <p>Web Developer | Graphic Designer</p>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#biodata">Biodata</a></li>
-        <li><a href="#pendidikan">Pendidikan</a></li>
-        <li><a href="#skills">Skills</a></li>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#biodata">Biodata</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
       </ul>
     </nav>
 
