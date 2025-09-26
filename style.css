@@ -118,33 +118,70 @@ section:target {
   border-color: #c7d2fe;
 }
 
-#email {
-  font-weight: 700;
-  color: #3f51b5;
+#biodata {
+  background: linear-gradient(180deg, #eef4ff, #ffffff 55%);
+}
+#pendidikan {
+  background: linear-gradient(180deg, #f2f6ff, #ffffff 55%);
+}
+#skills {
+  background: linear-gradient(180deg, #f7f9ff, #ffffff 55%);
 }
 
+#biodata,
+#pendidikan,
+#skills {
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Styling isi tetap rapi */
+#biodata p {
+  margin: 0.35rem 0;
+}
+#email {
+  font-weight: 700;
+  color: #2b6bff;
+}
 #email a {
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+#pendidikan ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.15rem;
+}
+#pendidikan li {
+  margin: 0.25rem 0;
+}
+#pendidikan li::marker {
+  color: #2b6bff;
+}
+
+#skills p {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
 }
 
 footer {
-  background-color: #6b8e4e;
-  padding: 10px;
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, rgba(26, 32, 54, 0.85), rgba(26, 32, 54, 0.85)), #1a2036;
+  color: #e7eaf6;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
-
-a[href*="instagram.com"]::after {
-  content: " ↗";
-  display: inline-block;
-  color: #fff;
-  font-size: 10px;
-  vertical-align: text-top;
+footer a {
+  color: #9ec5ff;
 }
-
-a[href*="tiktok.com"]::after {
-  content: " ↗";
-  display: inline-block;
-  color: #fff;
-  font-size: 10px;
-  vertical-align: text-top;
+footer a[href*="instagram.com"]::after,
+footer a[href*="tiktok.com"]::after {
+  content: "↗";
+  font-size: 0.8em;
+  margin-left: 0.25em;
+  opacity: 0.85;
 }
