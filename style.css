@@ -82,10 +82,40 @@ header p {
 }
 
 section {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 20px 0;
-  box-shadow: 0 0 5px #aaa;
+  scroll-margin-top: 90px; /* biar anchor tidak ketutup nav */
+  margin: 1.25rem auto;
+  padding: 1.25rem 1.25rem 1.1rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+  max-width: 1000px;
+}
+
+section h2 {
+  margin: 0 0 0.9rem;
+  font-size: clamp(1.15rem, 2.1vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  position: relative;
+  padding-left: 0.9rem;
+  color: #0f172a;
+}
+
+/* garis aksen di kiri judul (gradien selaras header) */
+section h2::before {
+  content: "";
+  position: absolute;
+  inset: 0.2rem auto 0.2rem 0;
+  width: 4px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #2b6bff, #1fb6ff);
+}
+
+/* highlight halus saat section dituju via anchor (#biodata, dll.) */
+section:target {
+  box-shadow: 0 12px 40px rgba(43, 107, 255, 0.18);
+  border-color: #c7d2fe;
 }
 
 #email {
