@@ -474,7 +474,8 @@ Penggunaan HTML semantik (mis. `<header>`, `<footer>`, `<article>`, `<section>`,
 <br>
 <br>
 **Tampilan CV DEDY** (Tampilan style sudah dikembangkan)
-<img width="1440" height="900" alt="Tangkapan Layar 2025-09-26 pukul 21 33 13" src="https://github.com/user-attachments/assets/05df07f2-ba65-4229-9396-c4fd026f2d23" />
+<img width="1432" height="854" alt="Tangkapan Layar 2025-09-26 pukul 21 33 13" src="https://github.com/user-attachments/assets/64affc40-afbd-46ac-bf07-b2a589088c77" />
+
 
 
 
