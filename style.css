@@ -3,18 +3,39 @@ body {
 }
 
 header {
-  background-color: #6b8e4e;
-  padding: 20px;
-  text-align: center;
+  position: relative;
+  isolation: isolate;
+  background: radial-gradient(1200px 400px at 0% 0%, rgba(122, 162, 255, 0.25), transparent 60%), linear-gradient(135deg, #7aa2ff -10%, #9ef0ff 40%, transparent 40%), #12162a;
+  padding: 2.5rem 1.5rem 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
-
-header h1::first-line {
-  font-size: 140%;
-  font-weight: 800;
+header .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
 }
-
-header p::first-line {
-  font-variant: small-caps;
+.avatar {
+  width: 108px;
+  height: 108px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: #ddd;
+}
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: clamp(1.6rem, 2.8vw, 2.25rem);
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+header p {
+  margin: 0;
+  color: #ffd166;
+  font-weight: 600;
+  opacity: 0.95;
 }
 
 .navbar {
