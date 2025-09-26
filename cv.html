@@ -30,24 +30,64 @@
 
     <section id="biodata">
       <h2 id="judul-biodata">Biodata Diri</h2>
-      <p>Nama: Dedy Wanditya</p>
-      <p id="email">Email: <a href="mailto:imadededywanditya@gmail.com">imadededywanditya@gmail.com</a></p>
-      <p>Telepon: 081337771929</p>
-      <p>Domisili: Badung</p>
+
+      <div class="card">
+        <div class="id-row">
+          <img class="mini-avatar" src="assets/Foto-DedyW.jpeg" alt="Foto Dedy Wanditya" />
+          <div>
+            <h3 class="name">Dedy Wanditya</h3>
+            <p class="role">Web Developer • Graphic Designer</p>
+          </div>
+        </div>
+
+        <ul class="info-list">
+          <li><span class="label">Email</span><a href="mailto:imadededywanditya@gmail.com">imadededywanditya@gmail.com</a></li>
+          <li><span class="label">Telepon</span><span>081337771929</span></li>
+          <li><span class="label">Domisili</span><span>Badung</span></li>
+        </ul>
+      </div>
     </section>
 
-    <section id="pendidikan">
-      <h2>Pendidikan</h2>
-      <ul>
-        <li>SD Negeri 1 Pecatu</li>
-        <li>SMP Negeri 2 Kuta Selatan</li>
-        <li>SMK TI Bali Global Jimbaran</li>
+    <section id="pendidikan" aria-labelledby="judul-pendidikan">
+      <h2 id="judul-pendidikan">Pendidikan</h2>
+
+      <ol class="edu-timeline">
+        <li>
+          <div class="dot"></div>
+          <div class="edu-item">
+            <div class="edu-title">SMK TI Bali Global Jimbaran</div>
+            <div class="edu-meta">Rekayasa Perangkat Lunak</div>
+          </div>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <div class="edu-item">
+            <div class="edu-title">SMP Negeri 2 Kuta Selatan</div>
+            <div class="edu-meta">—</div>
+          </div>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <div class="edu-item">
+            <div class="edu-title">SD Negeri 1 Pecatu</div>
+            <div class="edu-meta">—</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" aria-labelledby="judul-skills">
+      <h2 id="judul-skills">Skills</h2>
+
+      <!-- lebih enak dibaca kalau jadi chip -->
+      <ul class="skill-badges">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>C++</li>
+        <li>React</li>
       </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>HTML, CSS, JavaScript, PHP, C++, React</p>
     </section>
 
     <footer>
